@@ -1,0 +1,8 @@
+{
+  "name": "DAC",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "python-dac",
+  "workspaceFolder": "/workdir",
+  "postCreateCommand": "sh init_develop.sh",
+  "shutdownAction": "stopCompose"
+}

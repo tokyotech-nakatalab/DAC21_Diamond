@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  python-dac:
+    build: .
+    environment:
+      SHELL: "/bin/bash"
+    command: sleep infinity
+    platform: linux/arm64
+    tty: true
+    volumes:
+      - ../:/workdir
+      - ~/.ssh:/root/.ssh
